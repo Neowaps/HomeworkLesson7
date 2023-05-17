@@ -25,7 +25,7 @@ void ShowArray2D(int[,] showArr)
     {
         for (int j = 0; j < showArr.GetLength(1); j++)
         {
-            System.Console.Write(showArr[i,j] + " ");
+            System.Console.Write(showArr[i, j] + " ");
         }
         System.Console.WriteLine();
     }
@@ -47,10 +47,10 @@ double[] GetAvg(int[,] arrAvg)
     {
         for (int j = 0; j < arrAvg.GetLength(0); j++)
         {
-            avg[i] += arrAvg[j,i];
+            avg[i] += arrAvg[j, i];
         }
-    avg[i] /= arrAvg.GetLength(0);
-    avg[i] = Math.Round(avg[i], 2);
+        avg[i] /= arrAvg.GetLength(0);
+        avg[i] = Math.Round(avg[i], 2);
     }
     return avg;
 }

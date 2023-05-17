@@ -23,7 +23,7 @@ void ShowArray(double[,] showArr)
     {
         for (int j = 0; j < showArr.GetLength(1); j++)
         {
-            System.Console.Write(showArr[i,j] + " ");
+            System.Console.Write(showArr[i, j] + " ");
         }
         System.Console.WriteLine();
     }

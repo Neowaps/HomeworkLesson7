@@ -17,7 +17,7 @@ bool FindNumber(int[,] array, int num, bool res)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (num == array[i,j])
+            if (num == array[i, j])
             {
                 System.Console.WriteLine($"Индексы нужного вам элемента: ({i}, {j})");
                 res = true;
@@ -44,7 +44,7 @@ void ShowArray(int[,] showArr)
     {
         for (int j = 0; j < showArr.GetLength(1); j++)
         {
-            System.Console.Write(showArr[i,j] + " ");
+            System.Console.Write(showArr[i, j] + " ");
         }
         System.Console.WriteLine();
     }
