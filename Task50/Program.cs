@@ -21,20 +21,19 @@ bool FindNumber(int[,] array, int num, bool res)
             {
                 System.Console.WriteLine($"Индексы нужного вам элемента: ({i}, {j})");
                 res = true;
-                break;
             }
         }
     }
     return res;
 }
 
-void GetRandomArray(int[,] randarray)
+void GetRandomArray(int[,] randArray)
 {
-    for (int i = 0; i < randarray.GetLength(0); i++)
+    for (int i = 0; i < randArray.GetLength(0); i++)
     {
-        for (int j = 0; j < randarray.GetLength(1); j++)
+        for (int j = 0; j < randArray.GetLength(1); j++)
         {
-            randarray[i, j] = new Random().Next(1, 26);
+            randArray[i, j] = new Random().Next(1, 26);
         }
     }
 }

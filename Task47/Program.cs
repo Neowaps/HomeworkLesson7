@@ -30,13 +30,13 @@ void ShowArray(double[,] showArr)
 }
 
 
-void GetRandomArray(double[,] randarray)
+void GetRandomArray(double[,] randArray)
 {
-    for (int i = 0; i < randarray.GetLength(0); i++)
+    for (int i = 0; i < randArray.GetLength(0); i++)
     {
-        for (int j = 0; j < randarray.GetLength(1); j++)
+        for (int j = 0; j < randArray.GetLength(1); j++)
         {
-            randarray[i, j] = new Random().Next(-10, 10);
+            randArray[i, j] = new Random().Next(-10, 10);
         }
     }
 }
